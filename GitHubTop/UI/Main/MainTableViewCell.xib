@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="142" id="KGk-i7-Jjw" customClass="MainTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="142"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="141.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="repo" translatesAutoresizingMaskIntoConstraints="NO" id="kYh-Rg-BQt">
+                        <rect key="frame" x="8" y="8" width="20" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="aM5-st-swg"/>
+                            <constraint firstAttribute="width" secondItem="kYh-Rg-BQt" secondAttribute="height" multiplier="4:3" id="v8u-JR-g9X"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by radowanhabib" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qc3-Ru-T29">
+                        <rect key="frame" x="40" y="9" width="91.5" height="13.5"/>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
+                        <color key="textColor" red="0.47058823529999999" green="0.48627450979999998" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUo-Lp-D5r">
+                        <rect key="frame" x="40" y="30.5" width="272" height="103"/>
+                        <string key="text">This is Dr Katie Bouman the computer scientist behind the first ever image of a black-hole. She developed the algorithm that turned telescopic data into the historic photo we see today.</string>
+                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pUo-Lp-D5r" firstAttribute="leading" secondItem="qc3-Ru-T29" secondAttribute="leading" id="8ME-pW-IxP"/>
+                    <constraint firstAttribute="trailing" secondItem="pUo-Lp-D5r" secondAttribute="trailing" constant="8" id="AII-kd-SSb"/>
+                    <constraint firstItem="qc3-Ru-T29" firstAttribute="centerY" secondItem="kYh-Rg-BQt" secondAttribute="centerY" id="EUi-ch-HYd"/>
+                    <constraint firstItem="pUo-Lp-D5r" firstAttribute="top" secondItem="qc3-Ru-T29" secondAttribute="bottom" constant="8" id="FAb-iy-1qW"/>
+                    <constraint firstItem="qc3-Ru-T29" firstAttribute="leading" secondItem="kYh-Rg-BQt" secondAttribute="trailing" constant="12" id="QU5-es-RhX"/>
+                    <constraint firstItem="kYh-Rg-BQt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="i8E-Wh-drC"/>
+                    <constraint firstItem="kYh-Rg-BQt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="ndu-uw-wGI"/>
+                    <constraint firstAttribute="bottom" secondItem="pUo-Lp-D5r" secondAttribute="bottom" constant="8" id="v3z-2f-KrM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="pUo-Lp-D5r" id="i91-31-1Ff"/>
+                <outlet property="titleLabel" destination="qc3-Ru-T29" id="M9l-Cw-2HZ"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="175.44642857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="repo" width="9" height="12"/>
+    </resources>
+</document>
